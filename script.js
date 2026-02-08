@@ -19,31 +19,50 @@ function initScene() {
 
   document.getElementById("viewer").appendChild(renderer.domElement);
 
-  const light = new THREE.PointLight(0xffffff);
-  light.position.set(5,5,5);
-  scene.add(light);
+  const light1 = new THREE.PointLight(0xffffff, 1);
+  light1.position.set(5, 5, 5);
+  scene.add(light1);
+
+  const light2 = new THREE.AmbientLight(0xffffff, 0.6);
+  scene.add(light2);
+
 }
 
 function createModel(type) {
 
   let geometry;
+  let color;
 
-  if (type === "cube")
+  if (type === "cube") {
     geometry = new THREE.BoxGeometry();
+    color = 0x4fd1ff;   // Blue
+  }
 
-  else if (type === "sphere")
+  else if (type === "sphere") {
     geometry = new THREE.SphereGeometry(0.8, 32, 32);
+    color = 0xff6b6b;   // Red
+  }
 
-  else if (type === "cone")
+  else if (type === "cone") {
     geometry = new THREE.ConeGeometry(0.8, 1.5, 32);
+    color = 0x6bff95;   // Green
+  }
 
-  else if (type === "pyramid")
+  else if (type === "pyramid") {
     geometry = new THREE.ConeGeometry(1, 1.5, 4);
+    color = 0xffd93d;   // Yellow
+  }
 
-  const material = new THREE.MeshStandardMaterial({color: 0x00ffcc});
+  const material = new THREE.MeshStandardMaterial({
+    color: color,
+    metalness: 0.6,
+    roughness: 0.3
+  });
+
   mesh = new THREE.Mesh(geometry, material);
   scene.add(mesh);
 }
+
 
 function animate() {
   requestAnimationFrame(animate);
