@@ -69,12 +69,29 @@ function analyze(task) {
   animate();
 
   document.getElementById("dataOutput").innerHTML = `
-    Subject ID: ${row.subject_id}<br>
-    Trial ID: ${row.trial_id}<br>
-    Task: ${row.task_label}<br>
-    C3 Alpha: ${row.C3_alpha}<br>
-    Cz Alpha: ${row.Cz_alpha}<br>
-    C4 Alpha: ${row.C4_alpha}<br>
-    Feature Energy: ${row.feature_energy}
-  `;
+<table class="eegTable">
+<thead>
+<tr>
+<th>Parameter</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Subject ID</td><td>${row.subject_id}</td></tr>
+<tr><td>Trial ID</td><td>${row.trial_id}</td></tr>
+<tr><td>Task</td><td>${row.task_label}</td></tr>
+<tr><td>C3 Alpha</td><td>${row.C3_alpha}</td></tr>
+<tr><td>Cz Alpha</td><td>${row.Cz_alpha}</td></tr>
+<tr><td>C4 Alpha</td><td>${row.C4_alpha}</td></tr>
+<tr><td>C3 Beta</td><td>${row.C3_beta}</td></tr>
+<tr><td>Cz Beta</td><td>${row.Cz_beta}</td></tr>
+<tr><td>C4 Beta</td><td>${row.C4_beta}</td></tr>
+<tr><td>Logvar C3</td><td>${row.logvar_C3}</td></tr>
+<tr><td>Logvar Cz</td><td>${row.logvar_Cz}</td></tr>
+<tr><td>Logvar C4</td><td>${row.logvar_C4}</td></tr>
+<tr><td>Feature Energy</td><td>${row.feature_energy}</td></tr>
+</tbody>
+</table>
+`;
+
 }

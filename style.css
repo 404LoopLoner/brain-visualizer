@@ -1,8 +1,11 @@
 body {
-  background: #111;
-  color: white;
-  text-align: center;
+  background: linear-gradient(135deg,#a8b4d6,#d5d9f0);
   font-family: Arial;
+  text-align: center;
+}
+h1 {
+  margin-top: 30px;
+  color: #333;
 }
 
 .buttons button {
@@ -21,4 +24,34 @@ body {
 #dataOutput {
   margin-top: 20px;
   font-size: 18px;
+}
+
+.eegTable {
+  width: 500px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: #f7f7f7;
+  color: #333;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial;
+}
+
+.eegTable thead {
+  background: linear-gradient(90deg,#6a7bd8,#7f9cf5);
+  color: white;
+}
+
+.eegTable th,
+.eegTable td {
+  padding: 12px;
+  text-align: left;
+}
+
+.eegTable tbody tr:nth-child(even) {
+  background: #eaeaf4;
+}
+
+.eegTable tbody tr:hover {
+  background: #dcdcf0;
 }
