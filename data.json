@@ -1,5 +1,8 @@
 [
   {
+    "subject_id": 1,
+    "trial_id": 1,
+    "window_sec": 2,
     "task_label": "left_hand",
     "object_type": "cube",
     "C3_alpha": 0.82,
@@ -12,5 +15,41 @@
     "logvar_Cz": -2.35,
     "logvar_C4": -2.33,
     "feature_energy": 5.1
+  },
+
+  {
+    "subject_id": 1,
+    "trial_id": 2,
+    "window_sec": 2,
+    "task_label": "right_hand",
+    "object_type": "sphere",
+    "C3_alpha": 0.5,
+    "Cz_alpha": 0.48,
+    "C4_alpha": 0.52,
+    "C3_beta": 0.86,
+    "Cz_beta": 0.88,
+    "C4_beta": 0.9,
+    "logvar_C3": -2.8,
+    "logvar_Cz": -2.75,
+    "logvar_C4": -2.77,
+    "feature_energy": 4.2
+  },
+
+  {
+    "subject_id": 1,
+    "trial_id": 3,
+    "window_sec": 2,
+    "task_label": "feet",
+    "object_type": "pyramid",
+    "C3_alpha": 0.64,
+    "Cz_alpha": 0.61,
+    "C4_alpha": 0.63,
+    "C3_beta": 0.95,
+    "Cz_beta": 0.93,
+    "C4_beta": 0.97,
+    "logvar_C3": -2.5,
+    "logvar_Cz": -2.55,
+    "logvar_C4": -2.52,
+    "feature_energy": 4.8
   }
 ]
