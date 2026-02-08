@@ -1,0 +1,16 @@
+[
+  {
+    "task_label": "left_hand",
+    "object_type": "cube",
+    "C3_alpha": 0.82,
+    "Cz_alpha": 0.79,
+    "C4_alpha": 0.77,
+    "C3_beta": 1.04,
+    "Cz_beta": 0.98,
+    "C4_beta": 1.01,
+    "logvar_C3": -2.3,
+    "logvar_Cz": -2.35,
+    "logvar_C4": -2.33,
+    "feature_energy": 5.1
+  }
+]

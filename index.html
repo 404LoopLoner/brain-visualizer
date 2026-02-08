@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Brain Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Brain Thought Visualizer</h1>
+
+<div class="buttons">
+  <button onclick="analyze('left_hand')">Left Hand</button>
+  <button onclick="analyze('right_hand')">Right Hand</button>
+  <button onclick="analyze('feet')">Feet</button>
+  <button onclick="analyze('tongue')">Tongue</button>
+  <button onclick="analyze('random')">Random</button>
+</div>
+
+<div id="viewer"></div>
+
+<div id="dataOutput"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
