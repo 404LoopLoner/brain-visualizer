@@ -53,3 +53,21 @@
     "feature_energy": 4.8
   }
 ]
+
+{
+  "subject_id": 4,
+  "trial_id": 1,
+  "window_sec": 2,
+  "task_label": "tongue",
+  "object_type": "cone",
+  "C3_alpha": 0.46,
+  "Cz_alpha": 0.44,
+  "C4_alpha": 0.45,
+  "C3_beta": 1.08,
+  "Cz_beta": 1.05,
+  "C4_beta": 1.11,
+  "logvar_C3": -2.22,
+  "logvar_Cz": -2.18,
+  "logvar_C4": -2.24,
+  "feature_energy": 5.4
+}
