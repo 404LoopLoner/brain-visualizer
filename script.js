@@ -19,12 +19,13 @@ function initScene() {
 
   document.getElementById("viewer").appendChild(renderer.domElement);
 
-  const light1 = new THREE.PointLight(0xffffff, 1);
-  light1.position.set(5, 5, 5);
-  scene.add(light1);
 
-  const light2 = new THREE.AmbientLight(0xffffff, 0.6);
-  scene.add(light2);
+  const ambientLight = new THREE.AmbientLight(0xffffff, 1.2);
+  scene.add(ambientLight);
+
+  const directionalLight = new THREE.DirectionalLight(0xffffff, 1);
+  directionalLight.position.set(5, 5, 5);
+  scene.add(directionalLight);
 
 }
 
@@ -55,8 +56,10 @@ function createModel(type) {
 
   const material = new THREE.MeshStandardMaterial({
     color: color,
-    metalness: 0.6,
-    roughness: 0.3
+    emissive: color,
+    emissiveIntensity: 0.3,
+    metalness: 0.3,
+    roughness: 0.5
   });
 
   mesh = new THREE.Mesh(geometry, material);
@@ -85,6 +88,7 @@ function analyze(task) {
 
   initScene();
   createModel(row.object_type);
+  scene.background = new THREE.Color(0x111827);
   animate();
 
   document.getElementById("dataOutput").innerHTML = `
