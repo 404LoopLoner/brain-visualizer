@@ -51,10 +51,9 @@
     "logvar_Cz": -2.55,
     "logvar_C4": -2.52,
     "feature_energy": 4.8
-  }
-]
+  },
 
-{
+ {
   "subject_id": 1,
   "trial_id": 4,
   "window_sec": 2,
@@ -70,4 +69,5 @@
   "logvar_Cz": -2.18,
   "logvar_C4": -2.24,
   "feature_energy": 5.4
-}
+ }
+]

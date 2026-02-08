@@ -74,23 +74,3 @@ function analyze(task) {
   `;
 }
 
-function createModel(type) {
-  let geometry;
-
-  if (type === "cube")
-    geometry = new THREE.BoxGeometry();
-
-  else if (type === "sphere")
-    geometry = new THREE.SphereGeometry(0.8, 32, 32);
-
-  else if (type === "cone")
-    geometry = new THREE.ConeGeometry(0.8, 1.5, 32);
-
-  else if (type === "pyramid")
-    geometry = new THREE.ConeGeometry(1, 1.5, 4);
-
-  const material = new THREE.MeshStandardMaterial({ color: 0xff4444 });
-
-  mesh = new THREE.Mesh(geometry, material);
-  scene.add(mesh);
-}
